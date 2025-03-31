@@ -83,8 +83,8 @@
 
 .cash,
 .savings {
-  background-color: #8fbc8f; /* Light green boxes */
-  color: #fff5ea; /* Tan text on boxes */
+  background-color: darkgreen; /* Light green boxes */
+  color: white; /* Tan text on boxes */
   padding: 15px;
   border-radius: 10px;
   flex: 1;
@@ -113,7 +113,7 @@
 }
 
 .spending {
-  background-color: #8fbc8f; /* Light green spending area */
+  background-color: #e2d9cf; /* Light green spending area */
   color: #fff5ea; /* Tan text on spending */
   padding: 15px;
   border-radius: 10px;
@@ -205,4 +205,17 @@
   font-size: 0.8em;
   margin-top: 20px;
   text-align: center;
+}
+
+.spending h3 {
+  color: darkgreen;
+  font-size: 2em;
+}
+
+.amount {
+  background-color: #fff5ea;
+  width: 100%;
+  padding: 5px 0px 5px 5px;
+  text-align: center;
+  color: darkgreen;
 }
