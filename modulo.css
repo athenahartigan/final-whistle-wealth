@@ -128,7 +128,7 @@
 .progress-bar-container {
   background-color: #e0e0e0;
   border-radius: 10px;
-  height: 15px;
+  height: 18px;
   overflow: hidden;
 }
 
@@ -141,6 +141,7 @@
   padding-right: 10px;
   box-sizing: border-box;
   font-size: 0.9em;
+  align-content: center;
 }
 
 /* Module Content Styles */
@@ -208,15 +209,15 @@
 
 .progress-bar-container-small {
   background-color: #e0e0e0;
-  border-radius: 6px; /* Reduced radius */
-  height: 15px;
+  border-radius: 11px; /* Reduced radius */
+  height: 16px;
   overflow: hidden;
 }
 
 .progress-bar-small {
   background-color: #016f00; /* Dark green progress */
   height: 100%;
-  border-radius: 3px; /* Reduced radius */
+  border-radius: 11px; /* Reduced radius */
   color: white;
   text-align: right;
   padding-right: 5px;
