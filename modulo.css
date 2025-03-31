@@ -1,5 +1,8 @@
+/* modulo.css */
+
+/* Existing styles remain */
 .modulo-container {
-  background-color: #fff5ea; /* Tan background */
+  background-color: #f0f8ea; /* Light green background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,64 +11,221 @@
   min-height: 100vh;
 }
 
-.status-bar {
+/* Top Bar Styles */
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 0;
-  font-size: 0.9em;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.credit-score {
+  font-size: 1em;
   color: #333;
+  text-align: left;
 }
 
-.signal-wifi {
-  display: flex;
-  gap: 5px;
-}
-
-.signal-wifi span {
+.credit-score .score {
   display: block;
-  width: 6px;
-  height: 8px;
-  background-color: #777;
-  border-radius: 2px;
-  margin-bottom: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #016f00; /* Dark green */
 }
 
-.signal-wifi span:nth-child(1) {
-  height: 12px;
+.top-navigation {
+  display: flex;
+  gap: 10px;
 }
 
-.signal-wifi span:nth-child(2) {
-  height: 10px;
+.top-nav-button {
+  background: none;
+  border: none;
+  color: #555;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
 }
 
-.header {
-  color: #016f00; /* Dark green header text */
-  padding: 20px 0;
-  margin-bottom: 20px;
+.top-nav-button.active {
+  color: #016f00; /* Dark green */
+  font-weight: bold;
+}
+
+.profile-hamburger {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd; /* Placeholder for profile image */
+  overflow: hidden; /* Clip image to the circle */
+}
+
+.profile-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the circle */
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 1px;
+}
+
+/* Module Header Styles */
+.module-header {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.module-header h2 {
+  color: #016f00; /* Dark green */
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.8em;
+}
+
+.module-header p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Module Progress Styles */
+.module-progress {
+  width: 100%;
+  padding: 15px 20px;
   box-sizing: border-box;
   text-align: left;
 }
 
-.header h1 {
-  margin-top: 0;
-  font-size: 2em;
-  margin-bottom: 15px;
+.module-progress p {
+  color: #555;
+  margin-bottom: 5px;
 }
 
-.modulo-content {
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #8fbc8f; /* Light green progress */
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 0.9em;
+}
+
+/* Module Content Styles */
+.module-content {
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  line-height: 1.6;
-  color: #555;
+  margin-bottom: 20px;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
 }
 
+.module-content img {
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  /* You might not need display: block or inline-block here */
+}
+
+/* Additional Modules Styles */
+.additional-modules {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.additional-modules h3 {
+  color: #016f00; /* Dark green */
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.additional-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.module-card {
+  background-color: #8fbc8f; /* Light green module cards */
+  color: #fff5ea; /* Tan text */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.module-card img {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Small Progress Bar Styles */
+.module-progress-small {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress-bar-container-small {
+  background-color: #e0e0e0;
+  border-radius: 6px; /* Reduced radius */
+  height: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-small {
+  background-color: #016f00; /* Dark green progress */
+  height: 100%;
+  border-radius: 3px; /* Reduced radius */
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-size: 0.7em;
+  align-content: center;
+}
+
+/* Bottom Navigation Styles (remain the same) */
 .bottom-navigation {
   background-color: #8fbc8f; /* Light green bottom nav */
   display: flex;
@@ -85,26 +245,18 @@
   opacity: 0.7;
 }
 
-.nav-button.home {
-  /* Style with home icon */
-}
-
-.nav-button.money {
-  /* Style with money icon */
-}
-
-.nav-button.book {
-  /* Style with book icon */
-}
-
-.nav-button.news {
-  /* Style with news icon */
-}
-
 .nav-button.active {
   opacity: 1;
 }
 
+.nav-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Location Info (remains the same) */
 .location-info {
   color: #777;
   font-size: 0.8em;
