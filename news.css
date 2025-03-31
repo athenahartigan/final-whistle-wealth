@@ -130,22 +130,6 @@ img {
   opacity: 0.7;
 }
 
-.nav-button.home {
-  /* Style with home icon */
-}
-
-.nav-button.money {
-  /* Style with money icon */
-}
-
-.nav-button.book {
-  /* Style with book icon */
-}
-
-.nav-button.news {
-  /* Style with news icon */
-}
-
 .nav-button.active {
   opacity: 1;
 }

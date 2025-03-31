@@ -111,3 +111,16 @@
   margin-top: 20px;
   text-align: center;
 }
+
+.symbol {
+  height: 150px; /* Adjust icon size */
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 5%;
+}
