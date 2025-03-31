@@ -1,5 +1,5 @@
 img {
-  border: 3px solid #016f00;
+  border: 5px solid #016f00;
 }
 
 .news-container {
@@ -142,4 +142,15 @@ img {
   display: block; /* Make the image a block-level element */
   margin-left: auto;
   margin-right: auto; /* Center the block-level element */
+}
+
+.news-item:nth-child(2) img {
+  /* Target only the second news item's image */
+  max-width: 80%; /* Or some other percentage */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

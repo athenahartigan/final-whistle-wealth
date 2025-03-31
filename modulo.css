@@ -158,7 +158,7 @@
 
 .module-content img {
   max-width: 100%;
-  border: 2px solid #ccc;
+  border: 4px solid #ccc;
   border-radius: 5px;
   /* You might not need display: block or inline-block here */
 }
