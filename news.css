@@ -73,13 +73,6 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
-.news-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
 .news-item h3 {
   color: #333;
   font-size: 1.1em;
@@ -139,4 +132,14 @@ img {
   font-size: 0.8em;
   margin-top: 20px;
   text-align: center;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block; /* Make the image a block-level element */
+  margin-left: auto;
+  margin-right: auto; /* Center the block-level element */
 }
