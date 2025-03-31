@@ -180,7 +180,10 @@
 
 .additional-modules-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Always try to create 3 equal columns */
   gap: 15px;
 }
 
@@ -222,7 +225,7 @@
   text-align: right;
   padding-right: 5px;
   box-sizing: border-box;
-  font-size: 0.7em;
+  font-size: 0.5em;
   align-content: center;
 }
 
