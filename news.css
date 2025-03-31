@@ -1,0 +1,158 @@
+img {
+  border: 3px solid #016f00;
+}
+
+.news-container {
+  background-color: #fff5ea; /* Tan background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.signal-wifi {
+  display: flex;
+  gap: 5px;
+}
+
+.signal-wifi span {
+  display: block;
+  width: 6px;
+  height: 8px;
+  background-color: #777;
+  border-radius: 2px;
+  margin-bottom: auto;
+}
+
+.signal-wifi span:nth-child(1) {
+  height: 12px;
+}
+
+.signal-wifi span:nth-child(2) {
+  height: 10px;
+}
+
+.header {
+  color: #016f00; /* Dark green header text */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.header h1 {
+  margin-top: 0;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.news-feed {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.news-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.news-item h3 {
+  color: #333;
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.news-item .news-source {
+  color: #777;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+
+.news-item .news-excerpt {
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.news-item .read-more {
+  color: #016f00;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item .read-more:hover {
+  text-decoration: underline;
+}
+
+.bottom-navigation {
+  background-color: #8fbc8f; /* Light green bottom nav */
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.nav-button.home {
+  /* Style with home icon */
+}
+
+.nav-button.money {
+  /* Style with money icon */
+}
+
+.nav-button.book {
+  /* Style with book icon */
+}
+
+.nav-button.news {
+  /* Style with news icon */
+}
+
+.nav-button.active {
+  opacity: 1;
+}
+
+.location-info {
+  color: #777;
+  font-size: 0.8em;
+  margin-top: 20px;
+  text-align: center;
+}

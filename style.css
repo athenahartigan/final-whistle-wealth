@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff5ea; /* Tan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff5ea; /* Ensure container background is also tan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px; /* Optional: Add some rounded corners */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 80px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px;
+}
+
+.logo-separator {
+  width: 4px; /* Increased thickness */
+  height: 80px; /* Increased length */
+  background-color: #016f00; /* Green color for the bar */
+  margin-right: 20px; /* Add some space between the bar and the text */
+}
+
+.logo-text h1 {
+  color: #016f00; /* Green */
+  margin: 0;
+  font-size: 2em;
+  line-height: 1;
+  text-align: left;
+}
+
+.logo-text p {
+  color: #016f00; /* Green */
+  margin: 0;
+  font-size: 2em;
+  line-height: 1;
+  text-align: left;
+}
+
+.tagline {
+  color: #016f00; /* Green */
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px; /* Adjust button width as needed */
+}
+
+.login-button,
+.signup-button {
+  background-color: #016f00; /* Green */
+  color: #fff5ea; /* Tan */
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #004d00; /* Darker shade of green on hover */
+}
+
+.login-button a,
+.signup-button a {
+  display: block; /* Make the anchor fill the button */
+  width: 100%;
+  height: 100%;
+  text-align: center; /* Center the text within the button */
+  line-height: inherit; /* Inherit the line height from the button for vertical centering */
+}
+
+.bottom-navigation {
+  /* Existing styles for the bottom navigation */
+  display: flex; /* To arrange the buttons horizontally */
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Vertically align items */
+  /* ... other styles ... */
+}
+
+.nav-button {
+  display: block; /* Make the entire link clickable */
+  padding: 8px; /* Add some padding around the image */
+  /* Remove any background or text styles that were previously applied */
+  /* to the <a> tag if they are no longer needed */
+}
+
+.nav-icon {
+  display: block; /* Ensure the image takes up the full space of its container */
+  width: 30px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* You might want to add styles for the 'active' state, e.g., */
+}

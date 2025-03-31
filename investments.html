@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Finances - Final Whistle Wealth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="investments.css" />
+  </head>
+  <body>
+    <div class="container finances-container">
+      <div class="header">
+        <h1>Your Finances</h1>
+        <div class="finance-tabs">
+          <button class="tab" onclick="window.location.href='budget.html'">
+            Budget
+          </button>
+          <button class="tab active">Investment</button>
+          <button class="tab">NIL Income</button>
+        </div>
+      </div>
+      <div class="investing-overview">
+        <h2>Investing</h2>
+        <span class="total-value">$ 62,230</span>
+        <div class="investment-chart">
+          <img src="investment.png" alt="Investment Chart" />
+          <div class="chart-time-selectors">
+            <button class="time-selector">1D</button>
+            <button class="time-selector">1W</button>
+            <button class="time-selector active">1M</button>
+            <button class="time-selector">3M</button>
+            <button class="time-selector">YTD</button>
+            <button class="time-selector">1Y</button>
+            <button class="time-selector">ALL</button>
+          </div>
+          <div class="chart-y-labels">
+            <span>60K</span>
+            <span>40K</span>
+            <span>20K</span>
+            <span>0K</span>
+          </div>
+        </div>
+      </div>
+      <div class="biggest-movers">
+        <h2>Biggest Movers in 2025</h2>
+        <div class="movers-row">
+          <div class="mover positive">
+            <span>VOO : +640.32</span>
+            <span>( 18.3 % )</span>
+          </div>
+          <div class="mover negative">
+            <span>Nike : -450.42</span>
+            <span>( 24.1 % )</span>
+          </div>
+        </div>
+        <div class="movers-row">
+          <div class="mover positive">
+            <span>Home Depot : +240.32</span>
+            <span>( 12.8 % )</span>
+          </div>
+          <div class="mover negative">
+            <span>SCHF : -553.32</span>
+            <span>( 15.3 % )</span>
+          </div>
+        </div>
+        <div class="movers-row">
+          <div class="mover positive">
+            <span>Apple : +120.32</span>
+            <span>( 8.2 % )</span>
+          </div>
+          <div class="mover negative">
+            <span>Cava : -80.32</span>
+            <span>( 4.3 % )</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-navigation">
+        <a href="dashboard.html" class="nav-button active">
+          <img src="dashboard.png" alt="Dashboard" class="nav-icon home" />
+        </a>
+        <a href="budget.html" class="nav-button">
+          <img src="finances.png" alt="Budget" class="nav-icon money active" />
+        </a>
+        <a href="modulo.html" class="nav-button">
+          <img src="modulo.png" alt="modulos" class="nav-icon book" />
+        </a>
+        <a href="news.html" class="nav-button">
+          <img src="news.png" alt="News" class="nav-icon news" />
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

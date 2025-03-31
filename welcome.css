@@ -1,0 +1,57 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 30px;
+}
+
+.logo-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.welcome-text h1 {
+  color: #016f00; /* Green */
+  margin: 0;
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+.intro-text {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 0 20px; /* Add some side padding for wider screens */
+}
+
+.button-container {
+  margin-bottom: 30px;
+}
+
+.next-button {
+  background-color: #016f00; /* Green */
+  color: #fff5ea; /* Tan */
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px; /* More rounded button */
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #004d00; /* Darker shade of green on hover */
+}
+
+.location-info {
+  color: #777;
+  font-size: 0.8em;
+  margin-top: 20px;
+}

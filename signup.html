@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Final Whistle Wealth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container signup-form-container">
+      <h2 class="form-title">Sign up</h2>
+      <h1 class="account-title">Create an account</h1>
+      <form class="signup-form">
+        <div class="input-group">
+          <label for="school-code">School Code *</label>
+          <input type="text" id="school-code" name="school-code" required />
+        </div>
+        <div class="input-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="input-group">
+          <label for="repeat-password">Repeat password *</label>
+          <input
+            type="password"
+            id="repeat-password"
+            name="repeat-password"
+            required
+          />
+        </div>
+        <p class="terms-privacy">
+          By signing up on this app, you're also agreeing to our
+          <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        <button
+          type="submit"
+          class="submit-button"
+          onclick="window.location.href='welcome.html';"
+        >
+          Sign up
+        </button>
+      </form>
+      <p class="signin-link">
+        Already have an account? <a href="login.html">Sign in</a>
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
