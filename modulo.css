@@ -181,6 +181,11 @@ body {
   border-radius: 5px;
 }
 
+.module-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Elevate shadow on hover */
+}
+
 /* Add space to the last module card */
 .modules-grid .module-card:last-child,
 .additional-modules-grid .module-card:last-child {
@@ -289,9 +294,10 @@ body {
 }
 
 .module-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 3%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
 }
 
 /* Module Header Styles */
