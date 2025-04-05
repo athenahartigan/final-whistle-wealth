@@ -52,24 +52,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin-bottom: 30px;
+  width: 100%; /* Full width */
+}
+
+.feature-header {
+  display: flex;
+  align-items: center; /* Align items in the center */
+  justify-content: center; /* Center the feature content */
+  width: 100%; /* Full width */
 }
 
 .feature-icon {
   height: 40px; /* Adjust icon size */
-  margin-bottom: 10px;
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .feature h2 {
   font-size: 1.2em;
   color: #333;
-  margin-bottom: 10px;
+  margin: 0; /* Remove margin for consistent spacing */
 }
 
 .feature p {
   color: #777;
   font-size: 0.9em;
   line-height: 1.4;
+  margin-top: 5px; /* Add top margin for spacing */
 }
 
 .privacy-policy {

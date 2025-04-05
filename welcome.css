@@ -4,6 +4,8 @@
   align-items: center;
   padding: 40px;
   text-align: center;
+  background-color: #fff; /* Set background color to white */
+  margin: 30px;
 }
 
 .logo-container {
@@ -13,6 +15,7 @@
 .logo-image {
   width: 100px; /* Adjust size as needed */
   height: auto;
+  margin: auto;
 }
 
 .welcome-text h1 {
