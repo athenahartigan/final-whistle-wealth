@@ -9,7 +9,10 @@ body {
 }
 
 .container {
-  background-color: #fff5ea; /* Ensure container background is also tan */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
   display: flex;
   flex-direction: column;
   align-items: center;
