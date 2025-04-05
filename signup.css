@@ -6,6 +6,8 @@
   border-radius: 8px; /* Optional: Add some rounded corners */
   width: 400px; /* Adjust width of the form container */
   box-sizing: border-box; /* Ensure padding doesn't increase width */
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .form-title {

@@ -13,6 +13,8 @@ body {
   min-height: 90%; /* Ensure full viewport height */
   box-sizing: border-box; /* Include padding in min-height */
   background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .survey-question {
