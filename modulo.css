@@ -39,7 +39,7 @@ body {
   width: 100%; /* Ensure it takes full width */
   overflow: auto; /* Allow scrolling if content overflows */
   margin-top: 80px; /* Add margin to provide space for the fixed top bar */
-  padding-bottom: 20px; /* Add padding to ensure space for the fixed bottom navigation */
+  padding-bottom: 80px; /* Add padding to ensure space for the fixed bottom navigation */
 }
 
 .header {
@@ -61,7 +61,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 0px 20px;
   width: 100%;
 }
 
@@ -72,7 +73,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 300px; /* Set a maximum width for the module cards */
+  max-width: 400px; /* Set a maximum width for the module cards */
 }
 
 .module-card {
@@ -87,6 +88,7 @@ body {
   flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center items horizontally */
   text-align: center; /* Center text */
+  height: auto; /* Set height to auto to fit content */
 }
 
 .module-card:hover {
@@ -104,7 +106,7 @@ body {
 .module-card p {
   color: #555;
   font-size: 1em;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Match the margin for vertical spacing */
 }
 
 .module-progress {
@@ -148,16 +150,9 @@ body {
   border-radius: 5px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .module-card {
-    flex: 1 1 100%; /* Make each module card take full width on smaller screens */
-    max-width: none; /* Remove the max-width restriction */
-  }
-
-  .module-card-link {
-    max-width: 100%; /* Make each module card link take full width on smaller screens */
-  }
+/* Add space to the last module card */
+.modules-grid .module-card:last-child {
+  margin-bottom: 20px; /* Ensure space from the bottom navigation */
 }
 
 /* Bottom Navigation Styles */
@@ -170,6 +165,7 @@ body {
   position: fixed; /* Fix the navigation bar at the bottom */
   bottom: 0; /* Align it to the bottom of the viewport */
   left: 0; /* Align it to the left of the viewport */
+  border-radius: 10px;
 }
 
 .nav-button {
