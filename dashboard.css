@@ -123,7 +123,6 @@ body {
   position: fixed; /* Fix the navigation bar at the bottom */
   bottom: 0; /* Align it to the bottom of the viewport */
   left: 0; /* Align it to the left of the viewport */
-  border-radius: 10px;
   flex-shrink: 0; /* Ensure the navigation does not shrink */
 }
 
