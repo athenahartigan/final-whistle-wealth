@@ -66,6 +66,16 @@ body {
   width: 100%;
 }
 
+.additional-modules-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure modules are on the same line */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Set gap for spacing between cards */
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
 .module-card-link {
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Inherit text color */
@@ -73,7 +83,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px; /* Set a maximum width for the module cards */
+  max-width: 700px; /* Set a maximum width for the module cards */
+}
+
+.additional-modules-grid img {
+  max-width: 200px; /* Set a maximum width for the images */
+  height: 100px; /* Ensure all images have the same height */
+  object-fit: cover; /* Cover the container */
+  border-radius: 10px; /* Rounded edges */
 }
 
 .module-card {
@@ -151,7 +168,8 @@ body {
 }
 
 /* Add space to the last module card */
-.modules-grid .module-card:last-child {
+.modules-grid .module-card:last-child,
+.additional-modules-grid .module-card:last-child {
   margin-bottom: 20px; /* Ensure space from the bottom navigation */
 }
 
