@@ -79,8 +79,8 @@ body {
   align-items: center; /* Center items horizontally */
   text-align: center; /* Center text */
   height: auto; /* Set height to auto to fit content */
-  margin-left: 20px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-left: auto;
 }
 
 .news-item:hover {
@@ -218,6 +218,8 @@ body {
     padding: 10px; /* Reduce padding for smaller screens */
     flex: 1 1 100%; /* Make each news item take full width on smaller screens */
     max-width: none; /* Remove the max-width restriction */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .header h1 {
