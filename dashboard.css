@@ -134,6 +134,8 @@ body {
   height: 40px; /* Larger button size */
   opacity: 0.8; /* Slightly higher opacity */
   transition: opacity 0.3s; /* Smooth transition for opacity */
+  background-color: #016f00;
+  border-radius: 20%;
 }
 
 .nav-button:hover {
