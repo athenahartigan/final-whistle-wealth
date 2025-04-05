@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
-    <div class="container dashboard-screen-container">
-      <div class="header">
+    <div class="top-bar">
+      <div class="credit-score">
+        <b>Credit Score</b>
+        <span class="score">713</span>
+      </div>
+      <div class="profile-icon">
+        <img src="profile.png" alt="Profile" class="profile-image" />
+      </div>
+    </div>
+
+    <div class="container dashboard-container">
+      <header class="header">
         <h1>Hello, Zach</h1>
-        <div class="april-budget">
+      </header>
+      <main class="main-content">
+        <section class="card april-budget">
           <h2>April Budget</h2>
           <div class="budget-info">
             <div class="income">
@@ -23,40 +35,44 @@
               <span>$ 350.45</span>
             </div>
           </div>
-        </div>
-        <div class="emergency-fund-goal">
+        </section>
+        <section class="card emergency-fund-goal">
           <p>Current Goal : Building Emergency Fund</p>
           <div class="progress-bar-container">
             <div class="progress-bar" style="width: 38%"></div>
             <span>$ 4,600</span>
           </div>
           <p>Target : $ 12,000</p>
-        </div>
-      </div>
-      <div class="your-topics">
-        <h2>Your Topics</h2>
-        <div class="topic-item">
-          <img src="swimmer.png" alt="Topic Image" />
-          <h3>Groundbreaking House vs. NCAA settlement</h3>
-          <p>
-            20 Billion to be distributed to College athletes that have played
-            since 2016
-          </p>
-        </div>
-      </div>
-      <div class="your-financial-future">
-        <h2>Your Financial Future</h2>
-        <div class="modulo-info">
-          <p>Current modulo</p>
-          <h3>What is Credit ?</h3>
-          <p>Current Lesson :</p>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 72%"></div>
-            <span>72 %</span>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-navigation">
+        </section>
+        <a href="news.html" class="card-link">
+          <section class="card your-topics">
+            <h2>Your Topics</h2>
+            <div class="topic-item">
+              <img src="swimmer.png" alt="Topic Image" />
+              <h3>Groundbreaking House vs. NCAA settlement</h3>
+              <p>
+                20 Billion to be distributed to College athletes that have
+                played since 2016
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="modulo4.html" class="card-link">
+          <section class="card your-financial-future">
+            <h2>Your Financial Future</h2>
+            <div class="modulo-info">
+              <p>Current modulo</p>
+              <h3>What is Credit?</h3>
+              <p>Current Lesson :</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 72%"></div>
+                <span>72%</span>
+              </div>
+            </div>
+          </section>
+        </a>
+      </main>
+      <nav class="bottom-navigation">
         <a href="dashboard.html" class="nav-button active">
           <img src="dashboard.png" alt="Dashboard" class="nav-icon home" />
         </a>
@@ -69,9 +85,8 @@
         <a href="news.html" class="nav-button">
           <img src="news.png" alt="News" class="nav-icon news" />
         </a>
-      </div>
+      </nav>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

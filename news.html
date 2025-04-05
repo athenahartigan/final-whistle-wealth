@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="news.css" />
   </head>
   <body>
-    <div class="container news-container">
-      <div class="header">
-        <h1>News</h1>
+    <div class="top-bar">
+      <div class="credit-score">
+        <b>Credit Score</b>
+        <span class="score">713</span>
       </div>
-      <div class="news-feed">
+      <div class="profile-icon">
+        <img src="profile.png" alt="Profile" class="profile-image" />
+      </div>
+    </div>
+
+    <div class="container news-container">
+      <header class="header">
+        <h1>News</h1>
+      </header>
+      <main class="news-feed">
         <div class="news-item">
           <img src="swimmer.png" alt="News Image 1" />
           <h3>Groundbreaking House vs. NCAA settlement</h3>
@@ -44,8 +54,8 @@
             >Read More</a
           >
         </div>
-      </div>
-      <div class="bottom-navigation">
+      </main>
+      <nav class="bottom-navigation">
         <a href="dashboard.html" class="nav-button active">
           <img src="dashboard.png" alt="Dashboard" class="nav-icon home" />
         </a>
@@ -58,9 +68,8 @@
         <a href="news.html" class="nav-button">
           <img src="news.png" alt="News" class="nav-icon news active" />
         </a>
-      </div>
+      </nav>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
