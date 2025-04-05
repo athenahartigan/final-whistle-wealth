@@ -44,8 +44,8 @@ body {
 
 .header {
   color: #016f00; /* Dark green header text */
-  padding: 40px 0; /* Adjust padding to match "Hello, Zach" */
-  margin-bottom: 20px; /* Ensure consistent spacing */
+  padding: 40px 0; /* Add padding to the top and bottom of the header */
+  margin-bottom: 20px;
   width: 100%;
   text-align: center; /* Center the header text */
   flex-shrink: 0; /* Ensure the header does not shrink */
@@ -54,35 +54,31 @@ body {
 .header h1 {
   margin-top: 0;
   font-size: 2.5em; /* Larger font size for the header */
-  margin-bottom: 0px;
+  margin-bottom: 10px; /* Add margin below the header */
 }
 
-.news-feed {
-  width: 100%;
-  padding: 15px; /* Add padding around the news feed */
-  flex: 1; /* Allow the news feed to grow and fill the remaining space */
+.news-grid {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center the items */
-  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
 }
 
 .news-item {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px; /* Add margin between items */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-  max-width: 600px; /* Set a maximum width for the news items */
-  flex: 1 1 calc(50% - 40px); /* Adjust to fit two items per row with some margin */
+  flex: 1 1 calc(33.333% - 40px); /* Adjust to fit three items per row with some margin */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  display: flex; /* Enable flex layout for the news item */
+  display: flex; /* Enable flex layout for the card */
   flex-direction: column; /* Arrange children in a column */
-}
-
-.news-item:first-of-type {
-  margin-top: 0; /* Remove top margin for the first news item */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  height: auto; /* Set height to auto to fit content */
 }
 
 .news-item:hover {
@@ -90,69 +86,70 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Elevate shadow on hover */
 }
 
-.news-link {
-  text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit text color */
-  display: block;
+.news-item img {
+  max-width: 100%;
+  border: 6px solid #016f00; /* Dark green border */
+  border-radius: 5px;
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  margin-top: 20px;
 }
 
 .news-item h3 {
-  color: #333;
-  font-size: 1.5em; /* Larger font size for news titles */
+  color: #016f00; /* Dark green */
+  margin: 15px 0 5px 0;
+  font-size: 1.8em;
+}
+
+.news-source {
+  color: #999;
+  font-size: 0.9em;
   margin-bottom: 10px;
 }
 
-.news-item .news-source {
-  color: #777;
-  font-size: 0.9em; /* Slightly larger font size */
-  margin-bottom: 10px;
-}
-
-.news-item .news-excerpt {
+.news-excerpt {
   color: #555;
-  font-size: 1em; /* Larger font size for excerpts */
-  line-height: 1.6; /* Increased line height for better readability */
   margin-bottom: 15px;
-  flex-grow: 1; /* Allow the excerpt to grow and take available space */
 }
 
-.news-item .read-more {
-  color: #016f00;
-  font-size: 1em; /* Larger font size for read more link */
+.read-more {
+  color: #016f00; /* Dark green */
   text-decoration: none;
   font-weight: bold;
-  margin-bottom: 0; /* Remove margin below the read more link */
-  display: inline-block; /* Ensure it takes only the necessary space */
+  margin-bottom: 20px;
 }
 
-.news-item .read-more:hover {
+.read-more:hover {
   text-decoration: underline;
 }
 
+/* Add space to the last news item */
+.news-grid .news-item:last-child {
+  margin-bottom: 80px; /* Ensure space from the bottom navigation */
+}
+
+/* Bottom Navigation Styles */
 .bottom-navigation {
   background-color: #8fbc8f; /* Light green bottom nav */
   display: flex;
   justify-content: space-around;
-  padding: 15px;
+  padding: 15px 0;
   width: 100%;
   position: fixed; /* Fix the navigation bar at the bottom */
   bottom: 0; /* Align it to the bottom of the viewport */
   left: 0; /* Align it to the left of the viewport */
   border-radius: 10px;
-  flex-shrink: 0; /* Ensure the navigation does not shrink */
 }
 
 .nav-button {
   background: none;
   border: none;
   cursor: pointer;
-  width: 40px; /* Larger button size */
-  height: 40px; /* Larger button size */
-  opacity: 0.8; /* Slightly higher opacity */
-  transition: opacity 0.3s; /* Smooth transition for opacity */
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
 }
 
-.nav-button:hover {
+.nav-button.active {
   opacity: 1;
 }
 
@@ -160,6 +157,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .top-bar {
@@ -201,4 +199,34 @@ body {
   height: 100%;
   object-fit: cover; /* Ensure image covers the container */
   background-color: transparent; /* Ensure no background color */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .news-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .news-grid {
+    max-width: 100%; /* Remove max-width restriction */
+  }
+
+  .news-item {
+    padding: 10px; /* Reduce padding for smaller screens */
+    flex: 1 1 100%; /* Make each news item take full width on smaller screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+
+  .header h1 {
+    font-size: 2em; /* Reduce font size for smaller screens */
+  }
+
+  .news-item h3 {
+    font-size: 1.5em; /* Reduce font size for smaller screens */
+  }
+
+  /* Update margin-bottom for the last news item on smaller screens */
+  .news-grid .news-item:last-child {
+    margin-bottom: 100px; /* Ensure space from the bottom navigation */
+  }
 }
