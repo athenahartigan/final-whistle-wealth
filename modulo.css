@@ -66,7 +66,22 @@ body {
   width: 100%;
 }
 
+.additional-modules {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.additional-modules h3 {
+  color: #016f00; /* Dark green */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
 .additional-modules-grid {
+  margin-top: 30px;
   display: flex;
   flex-wrap: nowrap; /* Ensure modules are on the same line */
   justify-content: center;
@@ -83,12 +98,11 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 700px; /* Set a maximum width for the module cards */
 }
 
 .additional-modules-grid img {
-  max-width: 200px; /* Set a maximum width for the images */
-  height: 100px; /* Ensure all images have the same height */
+  max-width: 100px; /* Set a maximum width for the images */
+  height: 50px; /* Ensure all images have the same height */
   object-fit: cover; /* Cover the container */
   border-radius: 10px; /* Rounded edges */
 }
@@ -96,7 +110,7 @@ body {
 .module-card {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 10%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
   flex: 1 1 calc(33.333% - 40px); /* Adjust to fit three items per row with some margin */
@@ -123,7 +137,7 @@ body {
 .module-card p {
   color: #555;
   font-size: 1em;
-  margin-bottom: 15px; /* Match the margin for vertical spacing */
+  margin-top: 10px;
 }
 
 .module-progress {
@@ -247,4 +261,69 @@ body {
   height: 100%;
   object-fit: cover; /* Ensure image covers the container */
   background-color: transparent; /* Ensure no background color */
+}
+
+/* Small Progress Bar Styles */
+.module-progress-small {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress-bar-container-small {
+  background-color: #e0e0e0;
+  border-radius: 11px; /* Reduced radius */
+  height: 16px;
+  overflow: hidden;
+}
+
+.progress-bar-small {
+  background-color: #016f00; /* Dark green progress */
+  height: 100%;
+  border-radius: 11px; /* Reduced radius */
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-size: 0.5em;
+  align-content: center;
+}
+
+.module-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 3%;
+}
+
+/* Module Header Styles */
+.module-header {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.module-header h2 {
+  color: #016f00; /* Dark green */
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.8em;
+}
+
+.module-header p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .module-card {
+    flex: 1 1 calc(25% - 40px); /* Adjust to fit four items per row with some margin */
+  }
+}
+
+@media (min-width: 1024px) {
+  .module-card {
+    flex: 1 1 calc(20% - 40px); /* Adjust to fit five items per row with some margin */
+  }
 }
