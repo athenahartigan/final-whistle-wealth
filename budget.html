@@ -9,50 +9,55 @@
   </head>
   <body>
     <div class="container finances-container">
-      <div class="header">
-        <h1>Your Finances</h1>
-        <div class="finance-tabs">
-          <button class="tab active">Budget</button>
-          <button class="tab" onclick="window.location.href='investments.html'">
-            Investment
-          </button>
-          <button class="tab">NIL Income</button>
+      <div class="top-bar">
+        <div class="credit-score">
+          Credit Score
+          <span class="score">713</span>
+        </div>
+        <div class="profile-hamburger">
+          <div class="profile-icon">
+            <img src="profile.png" alt="Profile" class="profile-image" />
+          </div>
         </div>
       </div>
-      <div class="cash-savings">
-        <div class="cash">
-          <h2>Cash</h2>
-          <span class="amount">$ 6,478</span>
-          <p>Wells Fargo Checking : $ 6052</p>
-          <p>Fidelity Cash Account : $ 426</p>
-        </div>
-        <div class="savings">
-          <h2>Savings</h2>
-          <span class="amount">$ 14,320</span>
-          <p>Wells Fargo Savings : $ 4869</p>
-          <p>Ally High Yield : $ 9451</p>
-        </div>
-      </div>
-      <div class="spending">
-        <h3>Spending</h3>
-        <!-- <div class="spending-overview">
-          <div class="april-spending">
-            <span>April Spending</span>
-            <span class="amount">$ 2580</span>
-            <span class="percentage">( 57.3 % )</span>
+      <div class="content">
+        <div class="header">
+          <h1>Your Finances</h1>
+          <div class="finance-tabs">
+            <button class="tab active">Budget</button>
+            <button
+              class="tab"
+              onclick="window.location.href='investments.html'"
+            >
+              Investment
+            </button>
+            <button class="tab">NIL Income</button>
           </div>
-          <div class="expected-budget">
-            <span>Expected Budget</span>
-            <span class="amount">$ 4500</span>
+        </div>
+        <div class="cash-savings">
+          <div class="cash">
+            <h2>Cash</h2>
+            <span class="amount">$ 6,478</span>
+            <p>Wells Fargo Checking: $ 6052</p>
+            <p>Fidelity Cash Account: $ 426</p>
           </div>
-        </div> -->
-        <div class="spending-chart">
-          <img src="spending.png" alt="Spending Chart" />
-          <!-- <div class="chart-labels">
-            <span>7.5K</span>
-            <span>5K</span>
-            <span>2.5K</span>
-          </div> -->
+          <div class="savings">
+            <h2>Savings</h2>
+            <span class="amount">$ 14,320</span>
+            <p>Wells Fargo Savings: $ 4869</p>
+            <p>Ally High Yield: $ 9451</p>
+          </div>
+        </div>
+        <div class="spending">
+          <h3>Spending</h3>
+          <div class="spending-chart">
+            <img
+              id="spending-chart-img"
+              src="spending.png"
+              alt="Spending Chart"
+            />
+            </div>
+          </div>
         </div>
       </div>
       <div class="bottom-navigation">
@@ -63,14 +68,13 @@
           <img src="finances.png" alt="Budget" class="nav-icon money" />
         </a>
         <a href="modulo.html" class="nav-button">
-          <img src="modulo.png" alt="modulos" class="nav-icon book" />
+          <img src="modulo.png" alt="Modules" class="nav-icon book" />
         </a>
         <a href="news.html" class="nav-button">
           <img src="news.png" alt="News" class="nav-icon news" />
         </a>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
