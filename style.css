@@ -97,119 +97,89 @@ body {
 }
 
 .bottom-navigation {
-  /* Existing styles for the bottom navigation */
-  display: flex; /* To arrange the buttons horizontally */
-  justify-content: space-around; /* Distribute space evenly */
-  align-items: center; /* Vertically align items */
-  /* ... other styles ... */
+  background-color: #8fbc8f; /* Light green bottom nav */
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  width: 100%;
+  position: fixed; /* Fix the navigation bar at the bottom */
+  bottom: 0; /* Align it to the bottom of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  flex-shrink: 0; /* Ensure the navigation does not shrink */
 }
 
 .nav-button {
-  display: block; /* Make the entire link clickable */
-  padding: 8px; /* Add some padding around the image */
-  /* Remove any background or text styles that were previously applied */
-  /* to the <a> tag if they are no longer needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 50px; /* Larger button size */
+  height: 50px; /* Larger button size */
+  opacity: 0.8; /* Slightly higher opacity */
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+  background-color: #016f00;
+  border-radius: 20%;
+  border: 5px solid #016f00;
+}
+
+.nav-button:hover {
+  opacity: 1;
 }
 
 .nav-icon {
-  display: block; /* Ensure the image takes up the full space of its container */
-  width: 30px; /* Adjust the size as needed */
-  height: auto; /* Maintain aspect ratio */
-  /* You might want to add styles for the 'active' state, e.g., */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #8fbc8f; /* Light green background */
+  position: fixed; /* Fix the top bar at the top */
+  top: 0; /* Align it to the top of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.credit-score {
+  font-size: 1em;
+  color: white;
+  text-align: left;
+}
+
+.credit-score .score {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #016f00; /* Dark green */
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent; /* Ensure no background color */
+  overflow: hidden; /* Clip image to the container */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+  background-color: transparent; /* Ensure no background color */
 }
 
 /* Media query for tablets (max-width: 768px) */
-/* @media (max-width: 768px) {
-  .container {
-    padding: 20px;
-    width: 80%;
-  }
-  .logo-image {
-    width: 60px;
-  }
-  .logo-separator {
-    height: 60px;
-  }
-  .logo-text h1,
-  .logo-text p {
-    font-size: 1.5em;
-  }
-  .tagline {
-    font-size: 1em;
-  }
-  .button-container {
-    width: 200px;
-  }
-  .login-button,
-  .signup-button {
-    padding: 12px 25px;
-    font-size: 0.9em;
-  }
-  .nav-icon {
-    width: 25px;
-  }
-} */
+@media (max-width: 768px) {
+}
 
 /* Media query for phones (max-width: 480px) */
-/* @media (max-width: 480px) {
-  .container {
-    padding: 10px;
-    width: 90%;
-  }
-  .logo-image {
-    width: 50px;
-  }
-  .logo-separator {
-    height: 50px;
-  }
-  .logo-text h1,
-  .logo-text p {
-    font-size: 1.2em;
-  }
-  .tagline {
-    font-size: 0.9em;
-  }
-  .button-container {
-    width: 180px;
-  }
-  .login-button,
-  .signup-button {
-    padding: 10px 20px;
-    font-size: 0.8em;
-  }
-  .nav-icon {
-    width: 20px;
-  }
-} */
+@media (max-width: 480px) {
+}
 
 /* Media query for iPhone SE (max-width: 320px) */
-/* @media (max-width: 320px) {
-  .container {
-    padding: 5px;
-    width: 95%;
-  }
-  .logo-image {
-    width: 40px;
-  }
-  .logo-separator {
-    height: 40px;
-  }
-  .logo-text h1,
-  .logo-text p {
-    font-size: 1em;
-  }
-  .tagline {
-    font-size: 0.8em;
-  }
-  .button-container {
-    width: 160px;
-  }
-  .login-button,
-  .signup-button {
-    padding: 8px 15px;
-    font-size: 0.7em;
-  }
-  .nav-icon {
-    width: 15px;
-  }
-} */
+@media (max-width: 320px) {
+}
