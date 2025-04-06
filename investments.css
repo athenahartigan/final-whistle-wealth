@@ -98,7 +98,7 @@ body {
 
 .header {
   color: #016f00; /* Dark green header text */
-  margin: 30px 0px;
+  margin: 40px 0px;
   width: 100%;
   text-align: center; /* Center the header text */
 }
@@ -283,6 +283,12 @@ body {
   display: block;
 }
 
+.investing-overview h3 {
+  color: #016f00; /* Dark green */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .movers-row {
     gap: 20px;
@@ -295,8 +301,122 @@ body {
   }
 }
 
-.investing-overview h3 {
-  color: #016f00; /* Dark green */
-  font-size: 2em;
-  margin-bottom: 10px;
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 15px;
+  }
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .content {
+    padding: 15px;
+    margin-top: 50px;
+    padding-bottom: 100px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 2em;
+  }
+  .investing-overview,
+  .biggest-movers {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .investment-chart img {
+    max-width: 70%;
+  }
+  .movers-row {
+    flex-direction: column; /* Stack movers vertically */
+  }
+  .mover {
+    margin: 5px 0;
+  }
+  .nav-button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Media query for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 5px 10px;
+  }
+  .profile-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .content {
+    padding: 10px;
+    margin-top: 40px;
+    padding-bottom: 120px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 1.5em;
+  }
+  .investing-overview,
+  .biggest-movers {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .investment-chart img {
+    max-width: 60%;
+  }
+  .movers-row {
+    flex-direction: column; /* Stack movers vertically */
+  }
+  .mover {
+    margin: 5px 0;
+  }
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media query for iPhone SE (max-width: 320px) */
+@media (max-width: 320px) {
+  .top-bar {
+    padding: 2px 5px;
+  }
+  .profile-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .content {
+    padding: 5px;
+    margin-top: 35px;
+    padding-bottom: 140px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 1.2em;
+  }
+  .investing-overview,
+  .biggest-movers {
+    padding: 5px;
+    max-width: 100%;
+  }
+  .investment-chart img {
+    max-width: 50%;
+  }
+  .movers-row {
+    flex-direction: column; /* Stack movers vertically */
+  }
+  .mover {
+    margin: 5px 0;
+  }
+  .nav-button {
+    width: 25px;
+    height: 25px;
+  }
+  .credit-score {
+    font-size: 0.8em;
+  }
+  .credit-score .score {
+    font-size: 1.2em;
+  }
+  .bottom-navigation {
+    padding: 10px;
+  }
 }
