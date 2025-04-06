@@ -44,8 +44,7 @@ body {
 
 .header {
   color: #016f00; /* Dark green header text */
-  padding: 40px 0; /* Add padding to the top and bottom of the header */
-  margin-bottom: 20px;
+  padding: 20px 0; /* Add padding to the top and bottom of the header */
   width: 100%;
   text-align: center; /* Center the header text */
   flex-shrink: 0; /* Ensure the header does not shrink */
@@ -305,6 +304,7 @@ body {
   text-align: left;
   width: 100%;
   padding: 20px;
+  margin-top: 20px;
   box-sizing: border-box;
 }
 
@@ -318,7 +318,7 @@ body {
 .module-header p {
   color: #555;
   font-size: 1em;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 /* Responsive adjustments */
@@ -331,5 +331,112 @@ body {
 @media (min-width: 1024px) {
   .module-card {
     flex: 1 1 calc(20% - 40px); /* Adjust to fit five items per row with some margin */
+  }
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 15px;
+  }
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .modulo-container {
+    padding: 10px;
+    margin-top: 60px;
+    padding-bottom: 100px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 2em;
+  }
+  .module-card {
+    padding: 15px;
+    flex: 1 1 calc(50% - 20px); /* Adjust to fit two items per row */
+  }
+  .additional-modules-grid img {
+    max-width: 80px;
+    height: 40px;
+  }
+  .modules-grid {
+    gap: 10px 10px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* Media query for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 5px 10px;
+  }
+  .profile-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .modulo-container {
+    padding: 5px;
+    margin-top: 50px;
+    padding-bottom: 120px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 1.5em;
+  }
+  .module-card {
+    padding: 10px;
+    flex: 1 1 100%; /* Adjust to fit one item per row */
+  }
+  .additional-modules-grid img {
+    max-width: 60px;
+    height: 30px;
+  }
+  .modules-grid {
+    gap: 5px 5px; /* Adjust gap for smaller screens */
+  }
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media query for iPhone SE (max-width: 320px) */
+@media (max-width: 320px) {
+  .top-bar {
+    padding: 2px 5px;
+  }
+  .profile-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .modulo-container {
+    padding: 3px;
+    margin-top: 40px;
+    padding-bottom: 140px; /* Add extra padding to the bottom for the bottom navigation */
+  }
+  .header h1 {
+    font-size: 1.2em;
+  }
+  .module-card {
+    padding: 5px;
+    flex: 1 1 100%; /* Adjust to fit one item per row */
+  }
+  .additional-modules-grid img {
+    max-width: 50px;
+    height: 25px;
+  }
+  .modules-grid {
+    gap: 3px 3px; /* Adjust gap for smaller screens */
+  }
+  .nav-button {
+    width: 25px;
+    height: 25px;
+  }
+  .credit-score {
+    font-size: 0.8em;
+  }
+  .credit-score .score {
+    font-size: 1.2em;
+  }
+  .bottom-navigation {
+    padding: 10px;
   }
 }
