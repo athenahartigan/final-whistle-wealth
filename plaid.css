@@ -111,4 +111,133 @@
   box-sizing: border-box;
 }
 
-.cont
+.continue-button:hover {
+  background-color: #333; /* Darker black on hover */
+}
+
+.location-info {
+  color: #777;
+  font-size: 0.8em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.symbol {
+  height: 150px; /* Adjust icon size */
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 5%;
+}
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .plaid-container {
+    padding: 15px;
+    width: 80%;
+    max-width: 350px;
+  }
+  .plaid-logo img {
+    height: 25px;
+  }
+  .plaid-content h1 {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+  .feature-icon {
+    height: 35px;
+  }
+  .feature h2 {
+    font-size: 1.1em;
+  }
+  .feature p {
+    font-size: 0.85em;
+  }
+  .continue-button {
+    padding: 12px 35px;
+    font-size: 0.9em;
+  }
+  .symbol {
+    height: 120px;
+  }
+  button {
+    height: 40px;
+    width: 130px;
+  }
+}
+
+/* Media query for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .plaid-container {
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+  }
+  .plaid-logo img {
+    height: 20px;
+  }
+  .plaid-content h1 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+  .feature-icon {
+    height: 30px;
+  }
+  .feature h2 {
+    font-size: 1em;
+  }
+  .feature p {
+    font-size: 0.8em;
+  }
+  .continue-button {
+    padding: 10px 30px;
+    font-size: 0.85em;
+  }
+  .symbol {
+    height: 100px;
+  }
+  button {
+    height: 35px;
+    width: 120px;
+  }
+}
+
+/* Media query for iPhone SE (max-width: 320px) */
+@media (max-width: 320px) {
+  .plaid-container {
+    padding: 5px;
+    width: 95%;
+    max-width: 250px;
+  }
+  .plaid-logo img {
+    height: 15px;
+  }
+  .plaid-content h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  .feature-icon {
+    height: 25px;
+  }
+  .feature h2 {
+    font-size: 0.9em;
+  }
+  .feature p {
+    font-size: 0.75em;
+  }
+  .continue-button {
+    padding: 8px 25px;
+    font-size: 0.8em;
+  }
+  .symbol {
+    height: 80px;
+  }
+  button {
+    height: 30px;
+    width: 100px;
+  }
+}

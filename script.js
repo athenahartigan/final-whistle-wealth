@@ -49,3 +49,8 @@ loginForm.addEventListener("submit", async (event) => {
     loginMessage.textContent = "An error occurred during login.";
   }
 });
+
+function redirectToReadMore(newsItem) {
+  const readMoreLink = newsItem.querySelector(".read-more").href;
+  window.location.href = readMoreLink;
+}
