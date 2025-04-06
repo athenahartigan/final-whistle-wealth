@@ -400,7 +400,7 @@ body {
 }
 
 /* Media query for iPhone SE (max-width: 320px) */
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .top-bar {
     padding: 2px 5px;
   }
@@ -415,6 +415,10 @@ body {
   }
   .header h1 {
     font-size: 1.2em;
+  }
+  .module-header h2 {
+    line-height: 1.2em;
+    margin-bottom: 10px;
   }
   .module-card {
     padding: 5px;

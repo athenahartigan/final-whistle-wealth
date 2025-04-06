@@ -19,9 +19,4 @@ no.addEventListener("click", () => {
   redirectToRandomResult();
 });
 
-function redirectToRandomResult() {
-  const outcomes = ["spender.html", "saver.html", "investor.html"];
-  const randomIndex = Math.floor(Math.random() * outcomes.length);
-  const randomOutcome = outcomes[randomIndex];
-  window.location.href = randomOutcome;
-}
+funct
