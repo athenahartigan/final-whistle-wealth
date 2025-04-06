@@ -117,3 +117,99 @@ body {
   height: auto; /* Maintain aspect ratio */
   /* You might want to add styles for the 'active' state, e.g., */
 }
+
+/* Media query for tablets (max-width: 768px) */
+/* @media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 80%;
+  }
+  .logo-image {
+    width: 60px;
+  }
+  .logo-separator {
+    height: 60px;
+  }
+  .logo-text h1,
+  .logo-text p {
+    font-size: 1.5em;
+  }
+  .tagline {
+    font-size: 1em;
+  }
+  .button-container {
+    width: 200px;
+  }
+  .login-button,
+  .signup-button {
+    padding: 12px 25px;
+    font-size: 0.9em;
+  }
+  .nav-icon {
+    width: 25px;
+  }
+} */
+
+/* Media query for phones (max-width: 480px) */
+/* @media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    width: 90%;
+  }
+  .logo-image {
+    width: 50px;
+  }
+  .logo-separator {
+    height: 50px;
+  }
+  .logo-text h1,
+  .logo-text p {
+    font-size: 1.2em;
+  }
+  .tagline {
+    font-size: 0.9em;
+  }
+  .button-container {
+    width: 180px;
+  }
+  .login-button,
+  .signup-button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+  .nav-icon {
+    width: 20px;
+  }
+} */
+
+/* Media query for iPhone SE (max-width: 320px) */
+/* @media (max-width: 320px) {
+  .container {
+    padding: 5px;
+    width: 95%;
+  }
+  .logo-image {
+    width: 40px;
+  }
+  .logo-separator {
+    height: 40px;
+  }
+  .logo-text h1,
+  .logo-text p {
+    font-size: 1em;
+  }
+  .tagline {
+    font-size: 0.8em;
+  }
+  .button-container {
+    width: 160px;
+  }
+  .login-button,
+  .signup-button {
+    padding: 8px 15px;
+    font-size: 0.7em;
+  }
+  .nav-icon {
+    width: 15px;
+  }
+} */
