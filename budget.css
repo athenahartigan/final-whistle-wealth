@@ -292,3 +292,164 @@ body {
     max-width: 400px; /* Increase max-width for larger screens */
   }
 }
+/* Media queries for tablets */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 15px;
+  }
+
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .content {
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .cash,
+  .savings {
+    padding: 15px;
+    max-width: 250px;
+  }
+
+  .spending {
+    padding: 20px 5px;
+    max-width: 600px;
+  }
+
+  .spending h3 {
+    font-size: 1.5em;
+  }
+
+  .chart-time-selectors .time-selector {
+    padding: 3px 7px;
+    font-size: 0.8em;
+  }
+
+  .nav-button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Media queries for phones */
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 5px 10px;
+  }
+
+  .profile-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .content {
+    padding: 10px;
+    margin-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .header h1 {
+    font-size: 1em;
+  }
+
+  .cash,
+  .savings {
+    padding: 10px;
+    max-width: 200px;
+  }
+
+  .spending {
+    padding: 15px 5px;
+    max-width: 100%;
+  }
+
+  .spending h3 {
+    font-size: 1em;
+  }
+
+  .chart-time-selectors .time-selector {
+    padding: 2px 5px;
+    font-size: 0.7em;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media queries for iPhone SE */
+@media (max-width: 375px) {
+  .top-bar {
+    padding: 2px 5px;
+  }
+
+  .profile-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .content {
+    padding: 5px;
+    margin-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .header h1 {
+    font-size: 1.2em;
+  }
+
+  .cash,
+  .savings {
+    padding: 5px;
+    max-width: 150px;
+  }
+
+  .spending {
+    padding: 10px 5px;
+    max-width: 100%;
+  }
+
+  .spending h3 {
+    font-size: 1em;
+  }
+
+  .chart-time-selectors .time-selector {
+    padding: 1px 3px;
+    font-size: 0.6em;
+  }
+
+  .nav-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .credit-score {
+    font-size: 0.8em;
+  }
+
+  .credit-score .score {
+    font-size: 1.2em;
+  }
+
+  .cash h2,
+  .savings h2 {
+    font-size: 1.2em;
+  }
+
+  .cash .amount,
+  .savings .amount {
+    font-size: 1.5em;
+  }
+
+  .spending-chart img {
+    max-width: 70%;
+  }
+}
