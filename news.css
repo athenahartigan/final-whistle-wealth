@@ -44,8 +44,8 @@ body {
 
 .header {
   color: #016f00; /* Dark green header text */
-  padding: 40px 0; /* Add padding to the top and bottom of the header */
-  margin-bottom: 20px;
+  padding: 20px 0; /* Add padding to the top and bottom of the header */
+  margin-top: 20px;
   width: 100%;
   text-align: center; /* Center the header text */
   flex-shrink: 0; /* Ensure the header does not shrink */
